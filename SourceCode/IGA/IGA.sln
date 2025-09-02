@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGA", "IGA\IGA.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGA_MVVM_Module", "IGA_MVVM_Module\IGA_MVVM_Module.csproj", "{EFCD3A98-F519-4D1C-8B43-0282076C7438}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGA_Common_Module", "IGA_Common_Module\IGA_Common_Module.csproj", "{74A38863-EB98-4EB5-801E-6FF9D014E250}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EFCD3A98-F519-4D1C-8B43-0282076C7438}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFCD3A98-F519-4D1C-8B43-0282076C7438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFCD3A98-F519-4D1C-8B43-0282076C7438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A38863-EB98-4EB5-801E-6FF9D014E250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A38863-EB98-4EB5-801E-6FF9D014E250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A38863-EB98-4EB5-801E-6FF9D014E250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A38863-EB98-4EB5-801E-6FF9D014E250}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

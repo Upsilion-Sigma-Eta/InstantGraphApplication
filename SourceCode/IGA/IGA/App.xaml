@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:IGA"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- IGA_MVVM_Module의 DataTemplate 리소스 사전 병합 -->
+                <ResourceDictionary Source="pack://application:,,,/IGA_MVVM_Module;component/ResourceDictionary/DataTemplate.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

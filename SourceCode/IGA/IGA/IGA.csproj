@@ -12,4 +12,9 @@
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\IGA_Common_Module\IGA_Common_Module.csproj" />
+      <ProjectReference Include="..\IGA_MVVM_Module\IGA_MVVM_Module.csproj" />
+    </ItemGroup>
+
 </Project>
