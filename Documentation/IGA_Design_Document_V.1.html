@@ -274,8 +274,8 @@
 </tbody>
 </table>
 <div>​</div>
-<h3>2.2 데이터 그리드 수정 후 CSV 파일로 Export 하기​</h3>
-<div>​
+<h3>2.2 데이터 그리드 수정 후 CSV 파일로 Export 하기​​</h3>
+<div>
 <table border="1" style="border-collapse: collapse; width: 100%; height: auto; border-width: 1px;" class="mce-resize-disabled"><colgroup><col style="width: auto;"><col style="width: auto;"></colgroup>
 <tbody>
 <tr>
@@ -308,34 +308,48 @@
 </tr>
 <tr>
 <td style="padding: 0.1em; text-align: center;">최소 보장</td>
-<td style="padding: 0.1em;">​</td>
+<td style="padding: 0.1em;">저장할 수 없는 경우, 사유를 사용자에게 알림</td>
 </tr>
 <tr>
 <td style="padding: 0.1em; text-align: center;">성공 보장</td>
-<td style="padding: 0.1em;">​</td>
+<td style="padding: 0.1em;">데이터 그리드에 표시되는 내용을 성공적으로 csv 파일로 저장함.</td>
 </tr>
 <tr>
 <td style="padding: 0.1em; text-align: center;">트리거</td>
-<td style="padding: 0.1em;">​</td>
+<td style="padding: 0.1em;">사용자가 도구 모음에서 '파일 저장'을 클릭함</td>
 </tr>
 <tr>
 <td style="padding: 0.1em; text-align: center;">메인 성공 시나리오</td>
-<td style="padding: 0.1em;">​</td>
+<td style="padding: 0.1em;">
+<div>1. 사용자가 파일을 저장할 위치로 이동한다.</div>
+<div>2. 사용자가 저장할 파일명을 입력하고 저장 버튼을 누른다.</div>
+<div>3. 데이터 그리드에 있는 데이터들을 CSV 문자열로 변환하고, 파일에 쓴다.</div>
+<div>4. 파일에 쓰기가 끝나면 '저장 성공'이라는 메시지 박스를 띄운다.</div>
+</td>
 </tr>
 <tr>
 <td style="padding: 0.1em; text-align: center;">대안/예외 흐름</td>
-<td style="padding: 0.1em;">​</td>
+<td style="padding: 0.1em;">
+<div>2a. 올바르지 않은 파일명 입력 → 올바르지 않은 파일명임을 사용자에게 알리고, 2번으로 복귀.</div>
+<div>2b. 올바르지 않은 경로 → 올바르지 않은 경로임을 사용자에게 알리고, 1번으로 복귀.</div>
+</td>
 </tr>
 <tr>
 <td style="padding: 0.1em; text-align: center;">비기능/특수 요구</td>
-<td style="padding: 0.1em;">​</td>
+<td style="padding: 0.1em;">
+<div>50만개 레코드를 기준으로 10초 이내에 저장</div>
+<div>일부 행에 데이터가 빠져 있더라도 CSV 파일 포맷 준수하며 저장</div>
+</td>
 </tr>
 <tr>
 <td style="padding: 0.1em; text-align: center;">수용 기준(AC)</td>
-<td style="padding: 0.1em;">​</td>
+<td style="padding: 0.1em;">비기능/특수 요구를 지키면서 메인 성공 시나리오대로 진행 후 시나리오가 성공함</td>
 </tr>
 </tbody>
 </table>
+<div>​</div>
+<h3>2,3 불러온 데이터를 바탕으로 그래프 그리기</h3>
+<div>​</div>
 </div>
 </div>
 </div>
