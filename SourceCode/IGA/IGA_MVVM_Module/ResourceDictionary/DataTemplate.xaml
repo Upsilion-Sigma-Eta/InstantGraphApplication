@@ -10,4 +10,8 @@
         <View:MainView></View:MainView>
     </DataTemplate>
     
+    <DataTemplate DataType="{x:Type ViewModel:DataAnalysisViewModel}">
+        <View:DataAnalysisView></View:DataAnalysisView>
+    </DataTemplate>
+    
 </ResourceDictionary>
