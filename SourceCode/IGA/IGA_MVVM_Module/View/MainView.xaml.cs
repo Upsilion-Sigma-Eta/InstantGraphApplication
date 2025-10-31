@@ -1,8 +1,6 @@
-﻿using System.Windows.Controls;
+﻿namespace IGA_GUI_Module.View;
 
-namespace IGA_GUI_Module.View;
-
-public partial class MainView : UserControl
+public partial class MainView
 {
     public MainView()
     {

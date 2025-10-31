@@ -1,17 +1,17 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     
-                    xmlns:View="clr-namespace:IGA_GUI_Module.View"
+                    xmlns:view="clr-namespace:IGA_GUI_Module.View"
                     
-                    xmlns:ViewModel="clr-namespace:IGA_GUI_Module.ViewModel"
+                    xmlns:viewModel="clr-namespace:IGA_GUI_Module.ViewModel"
                     >
     
-    <DataTemplate DataType="{x:Type ViewModel:MainViewModel}">
-        <View:MainView></View:MainView>
+    <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
+        <view:MainView></view:MainView>
     </DataTemplate>
     
-    <DataTemplate DataType="{x:Type ViewModel:DataAnalysisViewModel}">
-        <View:DataAnalysisView></View:DataAnalysisView>
+    <DataTemplate DataType="{x:Type viewModel:DataAnalysisViewModel}">
+        <view:DataAnalysisView></view:DataAnalysisView>
     </DataTemplate>
     
 </ResourceDictionary>
