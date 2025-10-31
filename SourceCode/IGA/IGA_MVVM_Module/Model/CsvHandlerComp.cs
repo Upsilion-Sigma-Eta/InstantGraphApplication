@@ -3,7 +3,7 @@ using System.Windows.Controls;
 
 namespace IGA_GUI_Module.Model;
 
-public class CsvHandlerComp
+public static class CsvHandlerComp
 {
     public static string _delimiter = ",";
 
@@ -28,11 +28,13 @@ public class CsvHandlerComp
 
         List<string> headers = new List<string>();
         
+        // 헤더 부분 작성
         headers.AddRange(__dataGrid.Columns.Select(__column => __column != null ? __column.Header?.ToString() : "")!);
 
         csvStringBuilder.AppendJoin(_delimiter, headers);
         csvStringBuilder.AppendLine();
 
+        // 헤더가 아닌 실제 데이터를 csv에 담기 위해서 변환
         foreach (ItemCollection item in __dataGrid.Items)
         {
             if (__dataGrid.ItemContainerGenerator.ContainerFromItem(item) is not DataGridRow row)
@@ -43,6 +45,7 @@ public class CsvHandlerComp
             csvStringBuilder.AppendJoin(_delimiter, row.Item?.ToString());
         }
 
+        // 변환 결과 문자열 반환
         return csvStringBuilder.ToString();
     }
 }
