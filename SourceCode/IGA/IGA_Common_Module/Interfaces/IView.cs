@@ -2,9 +2,4 @@
 
 public interface IView
 {
-    public string Identifier
-    {
-        get => "Undefined";
-        set => throw new NotImplementedException();
-    }
 }

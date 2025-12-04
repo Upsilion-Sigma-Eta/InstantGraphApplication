@@ -2,9 +2,4 @@
 
 public interface IViewModel
 {
-    public string Identifier
-    {
-        get => "Undefined";
-        set => throw new NotImplementedException();
-    }
 }
